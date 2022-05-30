@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+/* 共通ここから */
+html{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+h1{
+    font-weight: normal;
+}
+
+a{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+p{
+    color: #333;
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.readmore{
+    text-align: center;
+}
+/* 共通ここまで */
+
+/* headerここから */
+.header-title{
+    padding: 20px 0;
+}
+/* headerここまで */
+
+/* menu-wrapperここから */
+.menu-wrapper{
+    background-color: #333;
+}
+
+.menu-contents{
+    max-width: 480px;
+    width: 100%;
+    height: 36px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-contents a{
+    color: #FFF;
+    text-decoration: none;
+}
+/* menu-wrapperここまで */
+
+/* pickup-wrapperここから */
+.pickup-wrapper .container{
+    margin-top: 44px;
+}
+
+.pickup-wrapper .flex-wrapper1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pickup-wrapper p{
+    font-weight: bold;
+    line-height: calc(16 / 14);
+    margin: 10px 0 15px 0;
+}
+/* pickup-wrapperここまで */
+
+/* maincontents-wrapperここから */
+.maincontents-wrapper .container{
+    margin-top: 70px;
+    margin-bottom: 140px;
+}
+.flex-wrapper2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-wrapper{
+    width: calc(780 / 1200 * 100%);
+}
+
+.main-wrapper h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: calc(28 / 24);
+    
+}
+
+.main-info{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.main-info span{
+    margin-left: 20px;
+    color: #333;
+}
+
+.main-wrapper img{
+    width: 100%;
+}
+
+.main-wrapper p{
+    font-weight: normal;
+    width: calc(687 / 780 * 100%);
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.main-2,
+.main-3{
+    margin-top: 80px;
+}
+
+aside{
+    width: calc(332 / 1200 * 100%);
+    margin-right: 21px;
+}
+/* maincontents-wrapperここまで */
