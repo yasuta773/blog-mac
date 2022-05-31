@@ -145,4 +145,38 @@ li{
     width: calc(345 / 1200 * 100%);
     margin-right: 21px;
 }
+
+.sidebar h3{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.sidebar p{
+font-size: 1.4rem;
+}
+/* sidebar共通ここまで */
+
+/* name-wrapperここまで */
+.aside-image{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.name-wrapper p{
+    margin-bottom: 60px;
+}
+/* name-wrapperここまで */
+
+/* ranking-wrapperここから */
+.ranking-wrapper p{
+    margin-bottom: 30px;
+}
+
+.ranking-wrapper p:last-of-type{
+    margin-bottom: 60px;
+}
+/* ranking-wrapperここまで */
+
+/* ------sidebarここまで------ */
 /* maincontents-wrapperここまで */
