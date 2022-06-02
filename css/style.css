@@ -12,6 +12,11 @@ img{
 
 h1{
     font-weight: normal;
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.6rem;
 }
 
 a{
@@ -42,7 +47,7 @@ li{
 
 /* headerここから */
 .header-title{
-    padding: 20px 0;
+    padding: 16px 0;
 }
 /* headerここまで */
 
@@ -51,7 +56,7 @@ li{
     background-color: #333;
 }
 
-.menu-contents{
+.menu-wrapper .menu-contents{
     max-width: 480px;
     width: 100%;
     height: 36px;
@@ -60,7 +65,7 @@ li{
     align-items: center;
 }
 
-.menu-contents a{
+.menu-wrapper .menu-contents a{
     color: #FFF;
     text-decoration: none;
 }
@@ -83,16 +88,16 @@ li{
 
 .pickup-wrapper p{
     font-weight: bold;
-    line-height: calc(16 / 14);
-    margin: 10px 0 15px 0;
+    line-height: calc(22 / 14);
+    margin: 7px 0 10px 0;
 }
 /* pickup-wrapperここまで */
 
 /* maincontents-wrapperここから */
-/* mainwrapperここから */
+/* main-wrapperここから */
 .maincontents-wrapper .container{
-    margin-top: 70px;
-    margin-bottom: 140px;
+    margin-top: 65px;
+    margin-bottom: 80px;
 }
 .flex-wrapper2{
     display: flex;
@@ -111,9 +116,9 @@ li{
 }
 
 .main-info{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
+    margin-top: 12px;
+    margin-bottom: 9px;
+    font-size: 1.2rem;
 }
 
 .main-info span{
@@ -128,13 +133,13 @@ li{
 .main-wrapper p{
     font-weight: normal;
     width: calc(687 / 780 * 100%);
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: 5px auto 24px auto;
+    line-height: calc(26 / 16);
 }
 
 .main-2,
 .main-3{
-    margin-top: 80px;
+    margin-top: 76px;
 }
 /* main-wrapperここまで */
 
@@ -142,14 +147,12 @@ li{
 
 /* sidebar共通ここから */
 .sidebar{
-    width: calc(345 / 1200 * 100%);
-    margin-right: 21px;
+    width: calc(354 / 1200 * 100%);
+    margin: 12px 13px 56px 0;
 }
 
 .sidebar h3{
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 30px;
 }
 
 .sidebar p{
@@ -160,23 +163,149 @@ font-size: 1.4rem;
 /* name-wrapperここまで */
 .aside-image{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+}
+
+.name-wrapper h3{
+    margin-bottom: 23px;
 }
 
 .name-wrapper p{
-    margin-bottom: 60px;
+    width: calc(341 / 354 * 100%);
+    margin-bottom: 52px;
+    line-height: calc(25 / 14);
 }
 /* name-wrapperここまで */
 
 /* ranking-wrapperここから */
-.ranking-wrapper p{
+.ranking-wrapper h3{
     margin-bottom: 30px;
 }
 
+.ranking-wrapper p{
+    margin-bottom: 26px;
+}
+
 .ranking-wrapper p:last-of-type{
-    margin-bottom: 60px;
+    margin-bottom: 56px;
 }
 /* ranking-wrapperここまで */
 
+/* archive-wrapperここから */
+.archive-wrapper h3{
+    margin-bottom: 28px;
+}
+
+.archive-wrapper li{
+    padding: 17px 0 17px 19px;
+    border-top: 1px solid #777;
+}
+
+.archive-wrapper li:last-of-type{
+    border-bottom: 1px solid #777;
+}
+
+.archive-wrapper a{
+    text-decoration: none;
+}
+/* archive-wrapperここまで */
+
 /* ------sidebarここまで------ */
 /* maincontents-wrapperここまで */
+
+/* footerここから */
+footer{
+    background-color: #F7F7F7;
+}
+
+.flex-wrapper3{
+    display: flex;
+    padding-top: 50px;
+}
+
+.about-contents{
+    width: calc(345 / 1200 * 100%);
+    margin-right: 81px;
+}
+
+.about-contents h3{
+    margin-bottom: 26px;
+}
+
+.about-contents p{
+    font-size: 1.4rem;
+    margin-bottom: 13px;
+    line-height: calc(24 / 14);
+}
+
+.contact {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact > li {
+    position: relative;
+    padding: 0px 0px 0px 1em;
+}
+
+.contact > li::before {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.5em solid transparent;
+    border-left: 0.6em solid #333;
+    content: "";
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.footer-menu{
+    width: calc(358 / 1200 * 100%);
+    margin-right: 54px;
+}
+
+.footer-menu h3{
+    margin-bottom: 30px;
+}
+
+.footer-menu li{
+    padding: 12px 0 12px 15px;
+    border-top: 1px solid #777;
+}
+
+.footer-menu li:last-of-type{
+    border-bottom: 1px solid #777;
+}
+
+.footer-menu a{
+    text-decoration: none;
+}
+
+.twitter-contents{
+    width: calc(356 / 1200 * 100%);
+}
+
+.twitter-contents h3{
+    margin-bottom: 30px;
+}
+
+.tweet{
+    height: 315px;
+    background-color: #DEDEDE;
+}
+
+.footer-end{
+    padding-top: 58px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.footer-end p{
+    font-size: 1.2rem;
+}
+/* footerここまで */
