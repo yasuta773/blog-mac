@@ -7,6 +7,7 @@ html{
 
 img{
     max-width: 100%;
+    width: 100%;
     vertical-align: bottom;
 }
 
@@ -49,6 +50,12 @@ li{
 .header-title{
     padding: 16px 0;
 }
+
+@media screen and (max-width: 750px) {
+    header .container{
+        padding-left: 22px;
+    }
+}
 /* headerここまで */
 
 /* menu-wrapperここから */
@@ -69,6 +76,16 @@ li{
     color: #FFF;
     text-decoration: none;
 }
+
+@media screen and (max-width: 750px) {
+    .menu-wrapper .container{
+        padding-right: 6px;
+    }
+
+    .menu-contents li:last-of-type{
+        display: none;
+    }
+}
 /* menu-wrapperここまで */
 
 /* pickup-wrapperここから */
@@ -86,10 +103,45 @@ li{
     margin-right: 23.3px;
 }
 
+.pickup2-sp,
+.pickup3-sp{
+    display: none;
+}
+
 .pickup-wrapper p{
     font-weight: bold;
     line-height: calc(22 / 14);
     margin: 7px 0 10px 0;
+}
+
+@media screen and (max-width: 750px){
+    .pickup-wrapper .container{
+        margin-top: 35px;
+    }
+
+    .pickup-wrapper .flex-wrapper1{
+        display: block;
+    }
+
+    .pickup-1,
+    .pickup-2{
+        margin-bottom: 26px;
+        margin-right: 0;
+    }
+
+    .pickup1-pc{
+        display: block;
+    }
+
+    .pickup2-pc,
+    .pickup3-pc{
+        display: none;
+    } 
+
+    .pickup2-sp,
+    .pickup3-sp{
+        display: block;
+    }
 }
 /* pickup-wrapperここまで */
 
@@ -112,7 +164,6 @@ li{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: calc(28 / 24);
-    
 }
 
 .main-info{
@@ -141,6 +192,40 @@ li{
 .main-3{
     margin-top: 76px;
 }
+
+@media screen and (max-width: 750px){
+    .maincontents-wrapper .container{
+        margin-top: 89px;
+        margin-bottom: 118px;
+    }
+
+    .flex-wrapper2{
+        display: block;
+    }
+
+    .main-wrapper{
+        width: initial;
+    }
+
+    .main-wrapper h2{
+        line-height: calc(40 / 24);
+    }
+
+    .main-info{
+        margin-top: 6px;
+    }
+
+    .main-wrapper p{
+        width: calc(283 / 375 * 100%);
+        margin-bottom: 22px;
+        line-height: calc(27 / 16);
+    }
+
+    .main-2,
+    .main-3{
+        margin-top: 81px;
+    }
+}
 /* main-wrapperここまで */
 
 /* ------sidebarここから------ */
@@ -158,12 +243,23 @@ li{
 .sidebar p{
 font-size: 1.4rem;
 }
+
+@media screen and (max-width: 750px){
+    .sidebar{
+        width: initial;
+        margin: 77px 0 56px 0;
+    }
+}
 /* sidebar共通ここまで */
 
 /* name-wrapperここまで */
 .aside-image{
     text-align: center;
     margin-bottom: 27px;
+}
+
+.name-wrapper img{
+    width: initial;
 }
 
 .name-wrapper h3{
@@ -174,6 +270,13 @@ font-size: 1.4rem;
     width: calc(341 / 354 * 100%);
     margin-bottom: 52px;
     line-height: calc(25 / 14);
+}
+
+@media screen and (max-width: 750px){
+    .name-wrapper p{
+        width: calc(368 / 375 * 100%);
+        margin-bottom: 54px;
+    }
 }
 /* name-wrapperここまで */
 
@@ -188,6 +291,16 @@ font-size: 1.4rem;
 
 .ranking-wrapper p:last-of-type{
     margin-bottom: 56px;
+}
+
+@media screen and (max-width: 750px){
+    .ranking-wrapper h3{
+        margin-bottom: 27px;
+    }
+
+    .ranking-wrapper p{
+        margin-bottom: 27px;
+    }
 }
 /* ranking-wrapperここまで */
 
@@ -307,5 +420,44 @@ footer{
 
 .footer-end p{
     font-size: 1.2rem;
+}
+
+@media screen and (max-width: 750px){
+    .flex-wrapper3{
+        display: block;
+        padding-top: 48px;
+    }
+
+    .about-contents{
+        width: initial;
+        margin-right: 0;
+    }
+
+    .contact > li{
+        margin-bottom: -2px;
+    }
+
+    .footer-menu{
+        width: initial;
+        margin-top: 46px;
+        margin-bottom: 27px;
+        margin-right: 0;
+    }
+
+    .footer-menu h3{
+        margin-bottom: 28px;
+    }
+
+    .twitter-contents{
+        width: initial;
+    }
+    
+    .twitter-contents h3{
+        margin-bottom: 29px;
+    }
+
+    .footer-end{
+        padding-top: 87px;
+    }
 }
 /* footerここまで */
