@@ -98,13 +98,11 @@ li{
     justify-content: center;
 }
 
-.pickup-1,
-.pickup-2{
+.pickup:nth-of-type(n+1){
     margin-right: 23.3px;
 }
 
-.pickup2-sp,
-.pickup3-sp{
+.pickup-sp{
     display: none;
 }
 
@@ -123,23 +121,16 @@ li{
         display: block;
     }
 
-    .pickup-1,
-    .pickup-2{
+    .pickup:nth-of-type(n+1){
         margin-bottom: 26px;
         margin-right: 0;
     }
 
-    .pickup1-pc{
-        display: block;
+    .pickup-pc{
+        display: none;
     }
 
-    .pickup2-pc,
-    .pickup3-pc{
-        display: none;
-    } 
-
-    .pickup2-sp,
-    .pickup3-sp{
+    .pickup-sp{
         display: block;
     }
 }
@@ -188,8 +179,7 @@ li{
     line-height: calc(26 / 16);
 }
 
-.main-2,
-.main-3{
+article:nth-of-type(n+2){
     margin-top: 76px;
 }
 
@@ -221,8 +211,7 @@ li{
         line-height: calc(27 / 16);
     }
 
-    .main-2,
-    .main-3{
+    article:nth-of-type(n+2){
         margin-top: 81px;
     }
 }
